@@ -181,10 +181,10 @@ public class PlaceAnOrder {
 						CheckOut.click();
 						System.out.println("CheckOut button is clicked");
 						//FILL IN THE BILLING INFORMATION
-						//WebDriverWait waitt = new WebDriverWait(driver, 10);
-						//waitt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:firstname']"))).sendKeys("test");
+						WebDriverWait waitt = new WebDriverWait(driver, 100);
+						waitt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:firstname']"))).sendKeys("test");
 
-						driver.findElement(By.xpath("//*[@id='billing:firstname']")).sendKeys("test");
+						//driver.findElement(By.xpath("//*[@id='billing:firstname']")).sendKeys("test");
 						System.out.println("First Name is enterd");
 						//WebDriverWait waitt2 = new WebDriverWait(driver, 10);
 						//waitt2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:lastname']"))).sendKeys("test");
