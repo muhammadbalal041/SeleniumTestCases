@@ -40,7 +40,7 @@ public class PlaceAnOrder {
 		DesiredCapabilities caps = DesiredCapabilities.phantomjs();
 		caps.setCapability( PhantomJSDriverService.PHANTOMJS_CLI_ARGS, cli_args );
 		caps.setCapability( PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "phantomjs");
-		driver =  new PhantomJSDriver( caps );
+		this.driver =  new PhantomJSDriver( caps );
 
 		//		Capabilities caps = new DesiredCapabilities();
 		//        ((DesiredCapabilities) caps).setJavascriptEnabled(true);                
@@ -49,7 +49,7 @@ public class PlaceAnOrder {
 		//                PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
 		//                "phantomjs"
 		//            );
-		driver = new  PhantomJSDriver(caps);
+		//driver = new  PhantomJSDriver(caps);
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
