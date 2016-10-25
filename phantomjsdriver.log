@@ -1,0 +1,57 @@
+[INFO  - 2016-10-25T12:11:52.394Z] GhostDriver - Main - running on port 19591
+[INFO  - 2016-10-25T12:11:52.570Z] Session [36ca5160-9aac-11e6-8785-4d05a839fb3e] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-25T12:11:52.570Z] Session [36ca5160-9aac-11e6-8785-4d05a839fb3e] - page.customHeaders:  - {}
+[INFO  - 2016-10-25T12:11:52.570Z] Session [36ca5160-9aac-11e6-8785-4d05a839fb3e] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-25T12:11:52.571Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 36ca5160-9aac-11e6-8785-4d05a839fb3e
+[INFO  - 2016-10-25T12:11:52.677Z] GhostDriver - Main - running on port 18950
+[INFO  - 2016-10-25T12:11:52.692Z] Session [36dd1610-9aac-11e6-9ebd-1ff90c3b19f7] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-25T12:11:52.693Z] Session [36dd1610-9aac-11e6-9ebd-1ff90c3b19f7] - page.customHeaders:  - {}
+[INFO  - 2016-10-25T12:11:52.693Z] Session [36dd1610-9aac-11e6-9ebd-1ff90c3b19f7] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-25T12:11:52.693Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 36dd1610-9aac-11e6-9ebd-1ff90c3b19f7
+[ERROR - 2016-10-25T12:12:57.733Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1477397577700
+[ERROR - 2016-10-25T12:13:28.455Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1477397608435
+[ERROR - 2016-10-25T12:13:59.141Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1477397639127
+[ERROR - 2016-10-25T12:14:29.890Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1477397669855
+[INFO  - 2016-10-25T12:14:30.154Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2016-10-25T12:15:06.240Z] GhostDriver - Main - running on port 32744
+[INFO  - 2016-10-25T12:15:06.421Z] Session [aa557b00-9aac-11e6-821b-6350fcca2100] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-25T12:15:06.421Z] Session [aa557b00-9aac-11e6-821b-6350fcca2100] - page.customHeaders:  - {}
+[INFO  - 2016-10-25T12:15:06.421Z] Session [aa557b00-9aac-11e6-821b-6350fcca2100] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-25T12:15:06.421Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aa557b00-9aac-11e6-821b-6350fcca2100
+[INFO  - 2016-10-25T12:15:06.519Z] GhostDriver - Main - running on port 8895
+[INFO  - 2016-10-25T12:15:06.532Z] Session [aa666af0-9aac-11e6-a22b-a3fcb4d6e7b5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-25T12:15:06.532Z] Session [aa666af0-9aac-11e6-a22b-a3fcb4d6e7b5] - page.customHeaders:  - {}
+[INFO  - 2016-10-25T12:15:06.532Z] Session [aa666af0-9aac-11e6-a22b-a3fcb4d6e7b5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-25T12:15:06.532Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aa666af0-9aac-11e6-a22b-a3fcb4d6e7b5
+[ERROR - 2016-10-25T12:15:56.308Z] Session [aa666af0-9aac-11e6-a22b-a3fcb4d6e7b5] - page.onError - msg: ReferenceError: Can't find variable: mag_ver
+[ERROR - 2016-10-25T12:15:56.308Z] Session [aa666af0-9aac-11e6-a22b-a3fcb4d6e7b5] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+  sendstat (http://www.beechtree.pk/skin/frontend/base/default/js/onepagecheckout.js.pagespeed.jm.NN773DaC0u.js:53)
+  onload (http://www.beechtree.pk/skin/frontend/base/default/js/onepagecheckout.js.pagespeed.jm.NN773DaC0u.js:53)
+[INFO  - 2016-10-25T12:16:07.089Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2016-10-25T12:16:52.398Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-10-25T12:20:06.285Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-10-25T12:21:52.403Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-10-25T12:25:06.285Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-10-25T12:25:32.003Z] GhostDriver - Main - running on port 26146
+[INFO  - 2016-10-25T12:25:32.158Z] Session [1f4d5e90-9aae-11e6-a4f7-874af39b8cac] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-25T12:25:32.158Z] Session [1f4d5e90-9aae-11e6-a4f7-874af39b8cac] - page.customHeaders:  - {}
+[INFO  - 2016-10-25T12:25:32.160Z] Session [1f4d5e90-9aae-11e6-a4f7-874af39b8cac] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-25T12:25:32.160Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1f4d5e90-9aae-11e6-a4f7-874af39b8cac
+[INFO  - 2016-10-25T12:25:32.277Z] GhostDriver - Main - running on port 28629
+[INFO  - 2016-10-25T12:25:32.368Z] Session [1f6d90c0-9aae-11e6-81c3-e5a667fbacb2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-10-25T12:25:32.368Z] Session [1f6d90c0-9aae-11e6-81c3-e5a667fbacb2] - page.customHeaders:  - {}
+[INFO  - 2016-10-25T12:25:32.368Z] Session [1f6d90c0-9aae-11e6-81c3-e5a667fbacb2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-10-25T12:25:32.368Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1f6d90c0-9aae-11e6-81c3-e5a667fbacb2
+[ERROR - 2016-10-25T12:26:08.046Z] Session [1f6d90c0-9aae-11e6-81c3-e5a667fbacb2] - page.onError - msg: ReferenceError: Can't find variable: mag_ver
+[ERROR - 2016-10-25T12:26:08.047Z] Session [1f6d90c0-9aae-11e6-81c3-e5a667fbacb2] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+  sendstat (http://www.beechtree.pk/skin/frontend/base/default/js/onepagecheckout.js.pagespeed.jm.NN773DaC0u.js:53)
+  onload (http://www.beechtree.pk/skin/frontend/base/default/js/onepagecheckout.js.pagespeed.jm.NN773DaC0u.js:53)
+[INFO  - 2016-10-25T12:26:20.785Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2016-10-25T12:26:52.404Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-10-25T12:30:06.289Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-10-25T12:30:32.283Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-10-25T12:31:52.404Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
