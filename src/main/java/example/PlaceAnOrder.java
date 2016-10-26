@@ -38,7 +38,7 @@ public class PlaceAnOrder {
 
 		String[] cli_args = new String[]{ "--ignore-ssl-errors=true" };
 		DesiredCapabilities caps = DesiredCapabilities.phantomjs();
-		caps.setCapability("takeScreenshot", "false");
+		//caps.setCapability("takeScreenshot", "false");
 		caps.setCapability( PhantomJSDriverService.PHANTOMJS_CLI_ARGS, cli_args );
 		caps.setCapability( PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "phantomjs");
 		this.driver =  new PhantomJSDriver( caps );
@@ -53,8 +53,8 @@ public class PlaceAnOrder {
 		//driver = new  PhantomJSDriver(caps);
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS); .
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		 .
 	}
 
 	@Test				
@@ -182,6 +182,7 @@ public class PlaceAnOrder {
 					{
 						CheckOut.click();
 						System.out.println("CheckOut button is clicked");
+						driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 						//FILL IN THE BILLING INFORMATION
 						WebDriverWait waitt = new WebDriverWait(driver, 100);
 						waitt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:firstname']"))).sendKeys("test");
