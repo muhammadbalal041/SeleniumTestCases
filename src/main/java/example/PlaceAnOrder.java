@@ -38,6 +38,7 @@ public class PlaceAnOrder {
 
 		String[] cli_args = new String[]{ "--ignore-ssl-errors=true" };
 		DesiredCapabilities caps = DesiredCapabilities.phantomjs();
+		caps.setCapability("takeScreenshot", "false");
 		caps.setCapability( PhantomJSDriverService.PHANTOMJS_CLI_ARGS, cli_args );
 		caps.setCapability( PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "phantomjs");
 		this.driver =  new PhantomJSDriver( caps );
@@ -53,6 +54,7 @@ public class PlaceAnOrder {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS); .
 	}
 
 	@Test				
