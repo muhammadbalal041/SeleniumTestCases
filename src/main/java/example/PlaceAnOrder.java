@@ -54,7 +54,6 @@ public class PlaceAnOrder {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		 .
 	}
 
 	@Test				
@@ -182,7 +181,7 @@ public class PlaceAnOrder {
 					{
 						CheckOut.click();
 						System.out.println("CheckOut button is clicked");
-						//driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+						driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 						//FILL IN THE BILLING INFORMATION
 						WebDriverWait waitt = new WebDriverWait(driver, 100);
 						waitt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:firstname']"))).sendKeys("test");
