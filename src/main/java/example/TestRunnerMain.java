@@ -43,7 +43,7 @@ public class TestRunnerMain {
         //File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         //FileUtils.copyFile(srcFile, new File("ffsnapshot.png"));
         driver.quit();
-// 	}
+ 	}
 
 		
 	}
