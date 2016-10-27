@@ -257,7 +257,7 @@ public class PlaceAnOrder {
 		}
 		System.out.println("after the Review Button is clicked");
 
-		CLOSE THE BROWSER
+		//CLOSE THE BROWSER
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement VerifyCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='test']")));
 
