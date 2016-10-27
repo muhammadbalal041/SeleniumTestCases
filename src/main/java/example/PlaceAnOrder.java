@@ -247,21 +247,21 @@ public class PlaceAnOrder {
 						System.out.println("Method cash delivery is clicked");
 
 						//PLACE ORDER
-						//WebDriverWait wait3 = new WebDriverWait(driver, 200);
-						//wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='review-buttons-container']/button")));
-						//driver.findElement(By.xpath("//*[@id='review-buttons-container']/button")).click();
-						//System.out.println("Review Button is clicked");
+						WebDriverWait wait3 = new WebDriverWait(driver, 200);
+						wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='review-buttons-container']/button")));
+						driver.findElement(By.xpath("//*[@id='review-buttons-container']/button")).click();
+						System.out.println("Review Button is clicked");
 					}
 				}
 			}
 		}
-		//System.out.println("after the Review Button is clicked");
+		System.out.println("after the Review Button is clicked");
 
-		//CLOSE THE BROWSER
-		//WebDriverWait wait = new WebDriverWait(driver, 10);
-		//WebElement VerifyCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='test']")));
+		CLOSE THE BROWSER
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement VerifyCode = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='test']")));
 
-		//System.out.println("Order is Successfully placed "+VerifyCode);
+		System.out.println("Order is Successfully placed "+VerifyCode);
 		//File scrFile3 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		//FileUtils.copyFile(scrFile3, new File("beechtree3.png"), true);
 		//driver.quit();
