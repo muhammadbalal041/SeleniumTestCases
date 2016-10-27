@@ -16,7 +16,7 @@ import org.testng.TestListenerAdapter;
 //import com.beust.testng.TestNG;
 import com.sun.jna.platform.FileUtils;
 
-@SuppressWarnings("deprecation")
+//@SuppressWarnings("deprecation")
 public class TestRunnerMain {
 
  	public static void main(String[] args) {
@@ -50,4 +50,4 @@ public class TestRunnerMain {
 		
 
 
-}
+//}
