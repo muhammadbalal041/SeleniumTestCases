@@ -20,11 +20,11 @@ import com.sun.jna.platform.FileUtils;
 public class TestRunnerMain {
 
  	public static void main(String[] args) {
-// 		TestListenerAdapter tla = new TestListenerAdapter();
-// 		TestNG testng = new TestNG();
-// 		testng.setTestClasses(new Class[] { PlaceAnOrder.class });
-// 		testng.addListener(tla);
-// 		testng.run();
+		TestListenerAdapter tla = new TestListenerAdapter();
+		TestNG testng = new TestNG();
+		testng.setTestClasses(new Class[] { PlaceAnOrder.class });
+		testng.addListener(tla);
+		testng.run();
 // 		String Xport = System.getProperty(
 //                 "lmportal.xvfb.id", ":1");
 //         final File firefoxPath = new File(System.getProperty(
