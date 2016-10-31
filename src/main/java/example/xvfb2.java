@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class xvfb2 {
   @Test
   public void f() {
-	  System.setProperty("firefox.gecko.driver", "geckodriver");
+	  //System.setProperty("firefox.gecko.driver", "geckodriver");
 	  String Xport = System.getProperty(
               "lmportal.xvfb.id", ":10");
       final File firefoxPath = new File(System.getProperty(
