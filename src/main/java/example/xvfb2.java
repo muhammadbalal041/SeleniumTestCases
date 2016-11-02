@@ -91,13 +91,14 @@ public class xvfb2 {
 			if(!(temp.equals("ACCESSORIES")||temp.equals("BT LAWN '16")))
 			{
 				//RANDOMLY SELECT THE SIZE
+				System.out.println("Before allsizes selector");
 				//this will only make a list of available sizes/clickable size buttons on the website so the issue of availabe sizes will be handled
 				List<WebElement> allsizes = driver.findElements(By.cssSelector("span[class='swatch']"));
 				System.out.println("all sizes is "+ allsizes);
 				//Random random3 = new Random();
 				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
 				
-				WebElement randomSize = allsizes.get(1);
+				WebElement randomSize = allsizes.get(2);
 				
 				
 				if(!allsizes.isEmpty())//if the size is availabe,click/select it
