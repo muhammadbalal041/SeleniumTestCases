@@ -87,7 +87,7 @@ public class xvfb2 {
 			//WebElement randomProduct = allProducts.get(1);
 			//*[@id="product-collection-image-4354"]
 			
-			WebElement randomProduct=driver.findElement(By.xpath("//*[@id='product-collection-image-4354']"));
+			WebElement randomProduct=driver.findElement(By.xpath("//*[@id='product-collection-image-4346']"));
 			System.out.println("print the selected product "+randomProduct);
 			randomProduct.click();
 
@@ -120,7 +120,7 @@ public class xvfb2 {
 				//*[@id="swatch14"]
 				//*[@id="swatch28"]
 				//*[@id="swatch11"]
-				driver.findElement(By.xpath("//*[@id='swatch11']")).click();
+				driver.findElement(By.xpath("//*[@id='swatch28']")).click();
 				System.out.println("swatch size is clicked");
 				
 				
