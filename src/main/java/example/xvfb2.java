@@ -107,7 +107,10 @@ public class xvfb2 {
 				
 				//WebElement randomSize = allsizes.get(2);
 				//*[@id="swatch5"]
-				driver.findElement(By.xpath("//*[@id='swatch5']")).click();
+				//*[@id="swatch6"]
+				//*[@id="swatch11"]
+				//*[@id="swatch22"]
+				driver.findElement(By.xpath("//*[@id='swatch11']")).click();
 				System.out.println("swatch size is clicked");
 				
 				
