@@ -93,6 +93,7 @@ public class xvfb2 {
 			if(!(temp.equals("ACCESSORIES")||temp.equals("BT LAWN '16")))
 			{
 				//RANDOMLY SELECT THE SIZE
+				System.out.println("Page title is: " + driver.getTitle());
 				System.out.println("Before allsizes selector");
 				//this will only make a list of available sizes/clickable size buttons on the website so the issue of availabe sizes will be handled
 				//*[@id="product-options-wrapper"]/dl[1]/dd[1]/div[1]
@@ -103,7 +104,8 @@ public class xvfb2 {
 				
 				//List<WebElement> allsizes = driver.findElements(By.xpath("//*[@id='ul-attribute133']"));
 				//System.out.println("all sizes is "+ allsizes);
-				
+				//*[@id="swatch28"]
+				//*[@id="swatch11"]
 				//Random random3 = new Random();
 				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
 				
@@ -113,7 +115,8 @@ public class xvfb2 {
 				//*[@id="swatch11"]
 				//*[@id="swatch22"]
 				//*[@id="swatch14"]
-				driver.findElement(By.xpath("//*[@id='swatch12']")).click();
+				//*[@id="swatch14"]
+				driver.findElement(By.xpath("//*[@id='swatch14']")).click();
 				System.out.println("swatch size is clicked");
 				
 				
