@@ -88,24 +88,29 @@ public class xvfb2 {
 			randomProduct.click();
 
 
-// 			if(!(temp.equals("ACCESSORIES")||temp.equals("BT LAWN '16")))
-// 			{
-// 				//RANDOMLY SELECT THE SIZE
-// 				//this will only make a list of available sizes/clickable size buttons on the website so the issue of availabe sizes will be handled
-// 				List<WebElement> allsizes = driver.findElements(By.cssSelector("span[class='swatch']"));
-// 				//Random random3 = new Random();
-// 				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
-// 				WebElement randomSize = allsizes.get('a');
-// 				if(!allsizes.isEmpty())//if the size is availabe,click/select it
-// 				{
-// 					randomSize.click();
-// 				}
-// 				else//if the sizes are not available, print on console that the product is out of stock
-// 				{
-// 					System.out.println("the item selected is out of stock");
-// 					outOfStock = true;
-// 				}
-// 			}
+			if(!(temp.equals("ACCESSORIES")||temp.equals("BT LAWN '16")))
+			{
+				//RANDOMLY SELECT THE SIZE
+				//this will only make a list of available sizes/clickable size buttons on the website so the issue of availabe sizes will be handled
+				List<WebElement> allsizes = driver.findElements(By.cssSelector("span[class='swatch']"));
+				System.out.println("all sizes is "+ allsizes);
+				//Random random3 = new Random();
+				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
+				
+				WebElement randomSize = allsizes.get(1);
+				
+				
+				if(!allsizes.isEmpty())//if the size is availabe,click/select it
+				{
+					randomSize.click();
+					System.out.println("swatch size is clicked");
+				}
+				else//if the sizes are not available, print on console that the product is out of stock
+				{
+					System.out.println("the item selected is out of stock");
+					outOfStock = true;
+				}
+			}
 // 			if(outOfStock == false)//continue testing only if product is in stock
 // 			{
 
