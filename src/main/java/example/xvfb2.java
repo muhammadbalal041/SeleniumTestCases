@@ -46,6 +46,7 @@ public class xvfb2 {
       // Start Firefox driver
        driver = new FirefoxDriver(firefoxBinary, null);
 // 	 driver = new FirefoxDriver();
+	driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       //driver.get("http://google.com/");
       //System.out.println("Page title is: " + driver.getTitle());
