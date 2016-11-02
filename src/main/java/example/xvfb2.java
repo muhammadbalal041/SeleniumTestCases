@@ -190,8 +190,8 @@ public class xvfb2 {
 
 					//checks if checkout button is enabled + displayed on webpage
 
-					WebDriverWait wait = new WebDriverWait(driver, 100);
-					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header-cart\"]/div[3]/div[3]/div/a/span")));
+					WebDriverWait wait99 = new WebDriverWait(driver, 200);
+					wait99.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header-cart\"]/div[3]/div[3]/div/a/span")));
 					WebElement CheckOut = driver.findElement(By.xpath("//*[@id='header-cart']/div[3]/div[3]/div/a/span"));
 					if(!(CheckOut.isDisplayed()&& CheckOut.isEnabled()))
 					{
