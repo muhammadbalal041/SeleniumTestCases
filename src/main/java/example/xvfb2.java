@@ -8,8 +8,8 @@ import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+//import org.testng.annotations.BeforeClass;
+//import org.testng.annotations.BeforeTest;
 
 import java.util.List;
 import java.util.Random;
@@ -33,7 +33,7 @@ public class xvfb2 {
   @Test
   public void f() {
 	  //WebDriver driver;
-	  private WebDriver driver;
+	 WebDriver driver;
 	boolean outOfStock = false;
 	  System.setProperty("webdriver.gecko.driver", "geckodriver");
 	  String Xport = System.getProperty(
