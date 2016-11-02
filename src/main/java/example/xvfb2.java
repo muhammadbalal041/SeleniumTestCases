@@ -12,7 +12,7 @@ public class xvfb2 {
   @Test
   public void f() {
 	  //WebDriver driver;
-	  System.setProperty("firefox.gecko.driver", "geckodriver");
+	  System.setProperty("firefox.gecko.driver", "/usr/bin/firefox");
 	  String Xport = System.getProperty(
               "lmportal.xvfb.id", ":10");
       final File firefoxPath = new File(System.getProperty(
