@@ -80,10 +80,12 @@ public class xvfb2 {
 
 
 			//SELECT A RANDOM PRODUCT
-			List<WebElement> allProducts = driver.findElements(By.cssSelector("a.product-image"));
+			//List<WebElement> allProducts = driver.findElements(By.cssSelector("a.product-image"));
 			//Random random2 = new Random();
 			//WebElement randomProduct = allProducts.get(random2.nextInt(allProducts.size()));
-			WebElement randomProduct = allProducts.get(1);
+			//WebElement randomProduct = allProducts.get(1);
+			//*[@id="product-collection-image-4354"]
+			WebElement randomProduct=driver.findElement(By.xpath("//*[@id='product-collection-image-4354']"));
 			System.out.println("print the selected product "+randomProduct);
 			randomProduct.click();
 
