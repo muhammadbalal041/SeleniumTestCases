@@ -93,8 +93,9 @@ public class xvfb2 {
 				//RANDOMLY SELECT THE SIZE
 				//this will only make a list of available sizes/clickable size buttons on the website so the issue of availabe sizes will be handled
 				List<WebElement> allsizes = driver.findElements(By.cssSelector("span[class='swatch']"));
-				Random random3 = new Random();
-				WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
+				//Random random3 = new Random();
+				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
+				WebElement randomSize = allsizes.get(1);
 				if(!allsizes.isEmpty())//if the size is availabe,click/select it
 				{
 					randomSize.click();
