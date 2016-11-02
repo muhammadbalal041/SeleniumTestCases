@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 public class xvfb2 {
   @Test
   public void f() {
+	  WebDriver driver;
 	  System.setProperty("firefox.gecko.driver", "geckodriver");
 // 	  String Xport = System.getProperty(
 //               "lmportal.xvfb.id", ":10");
@@ -21,7 +22,7 @@ public class xvfb2 {
 
       // Start Firefox driver
       //WebDriver driver = new FirefoxDriver(firefoxBinary, null);
-	WebDriver driver = new FirefoxDriver();
+	 driver = new FirefoxDriver();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       driver.get("http://google.com/");
       System.out.println("Page title is: " + driver.getTitle());
