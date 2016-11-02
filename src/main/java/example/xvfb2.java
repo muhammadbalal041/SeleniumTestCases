@@ -98,24 +98,29 @@ public class xvfb2 {
 				//*[@id="ul-attribute133"]/li[1]
 				//*[@id="ul-attribute133"]/li[2]
 				//*[@id="ul-attribute133"]
-				List<WebElement> allsizes = driver.findElements(By.xpath("//*[@id='ul-attribute133']"));
-				System.out.println("all sizes is "+ allsizes);
+				
+				//List<WebElement> allsizes = driver.findElements(By.xpath("//*[@id='ul-attribute133']"));
+				//System.out.println("all sizes is "+ allsizes);
+				
 				//Random random3 = new Random();
 				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
 				
-				WebElement randomSize = allsizes.get(2);
+				//WebElement randomSize = allsizes.get(2);
+				
+				driver.findElement(By.xpath("//*[@id='swatch4'])).click();
+				System.out.println("swatch size is clicked");
 				
 				
-				if(!allsizes.isEmpty())//if the size is availabe,click/select it
-				{
-					randomSize.click();
-					System.out.println("swatch size is clicked");
-				}
-				else//if the sizes are not available, print on console that the product is out of stock
-				{
-					System.out.println("the item selected is out of stock");
-					outOfStock = true;
-				}
+// 				if(!allsizes.isEmpty())//if the size is availabe,click/select it
+// 				{
+// 					randomSize.click();
+// 					System.out.println("swatch size is clicked");
+// 				}
+// 				else//if the sizes are not available, print on console that the product is out of stock
+// 				{
+// 					System.out.println("the item selected is out of stock");
+// 					outOfStock = true;
+// 				}
 			}
 // 			if(outOfStock == false)//continue testing only if product is in stock
 // 			{
