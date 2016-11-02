@@ -64,7 +64,7 @@ public class xvfb2 {
 
 		//RANDOMLY SELECT CATEGORY
 		List<WebElement> allCategories = driver.findElements(By.cssSelector("a.level0"));
-		Random random1 = new Random();
+		//Random random1 = new Random();
 		//WebElement randomCategory = allCategories.get(random1.nextInt(allCategories.size()));
 
 		WebElement randomCategory = allCategories.get(1);
@@ -81,8 +81,9 @@ public class xvfb2 {
 
 			//SELECT A RANDOM PRODUCT
 			List<WebElement> allProducts = driver.findElements(By.cssSelector("a.product-image"));
-			Random random2 = new Random();
-			WebElement randomProduct = allProducts.get(random2.nextInt(allProducts.size()));
+			//Random random2 = new Random();
+			//WebElement randomProduct = allProducts.get(random2.nextInt(allProducts.size()));
+			WebElement randomProduct = allProducts.get(1);
 			System.out.println("print the selected product "+randomProduct);
 			randomProduct.click();
 
