@@ -122,6 +122,9 @@ public class xvfb2 {
 				//*[@id="swatch11"]
 				//*[@id="swatch14"]
 				//*[@id="swatch11"]
+				WebDriverWait wait = new WebDriverWait(driver, 100);
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='swatch11']")));
+
 				driver.findElement(By.xpath("//*[@id='swatch11']")).click();
 				System.out.println("swatch size is clicked");
 				
