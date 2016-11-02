@@ -95,7 +95,10 @@ public class xvfb2 {
 				//this will only make a list of available sizes/clickable size buttons on the website so the issue of availabe sizes will be handled
 				//*[@id="product-options-wrapper"]/dl[1]/dd[1]/div[1]
 				//*[@id="product-options-wrapper"]/dl[1]/dd[1]
-				List<WebElement> allsizes = driver.findElements(By.xpath("//*[@id='product-options-wrapper']/dl[1]"));
+				//*[@id="ul-attribute133"]/li[1]
+				//*[@id="ul-attribute133"]/li[2]
+				//*[@id="ul-attribute133"]
+				List<WebElement> allsizes = driver.findElements(By.xpath("//*[@id='ul-attribute133']"));
 				System.out.println("all sizes is "+ allsizes);
 				//Random random3 = new Random();
 				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
