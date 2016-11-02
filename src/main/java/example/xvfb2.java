@@ -111,7 +111,7 @@ public class xvfb2 {
 				//*[@id="swatch11"]
 				//*[@id="swatch22"]
 				//*[@id="swatch14"]
-				driver.findElement(By.xpath("//*[@id='swatch14']")).click();
+				driver.findElement(By.xpath("//*[@id='swatch22']")).click();
 				System.out.println("swatch size is clicked");
 				
 				
