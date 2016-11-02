@@ -193,6 +193,8 @@ public class xvfb2 {
 					WebDriverWait wait99 = new WebDriverWait(driver, 200);
 					wait99.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"header-cart\"]/div[3]/div[3]/div/a/span")));
 					WebElement CheckOut = driver.findElement(By.xpath("//*[@id='header-cart']/div[3]/div[3]/div/a/span"));
+					CheckOut.click();
+						System.out.println("CheckOut button is clicked");
 					if(!(CheckOut.isDisplayed()&& CheckOut.isEnabled()))
 					{
 						if(!CheckOut.isDisplayed())
@@ -204,10 +206,10 @@ public class xvfb2 {
 							System.out.println("CHECKOUT button is disabled on webpage");
 						}
 					}
-					else
-					{
-						CheckOut.click();
-						System.out.println("CheckOut button is clicked");
+					//else
+					//{
+						//CheckOut.click();
+						//System.out.println("CheckOut button is clicked");
 // 						driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 // 						//FILL IN THE BILLING INFORMATION
 // 						WebDriverWait waitt = new WebDriverWait(driver, 100);
@@ -278,7 +280,7 @@ public class xvfb2 {
 // 						wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='review-buttons-container']/button")));
 // 						driver.findElement(By.xpath("//*[@id='review-buttons-container']/button")).click();
 // 						System.out.println("Review Button is clicked");
-					}
+					//}
 				}
 			}
  		}
