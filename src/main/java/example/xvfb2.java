@@ -11,16 +11,17 @@ import org.testng.annotations.Test;
 public class xvfb2 {
   @Test
   public void f() {
-	  //System.setProperty("firefox.gecko.driver", "geckodriver");
-	  String Xport = System.getProperty(
-              "lmportal.xvfb.id", ":10");
-      final File firefoxPath = new File(System.getProperty(
-              "lmportal.deploy.firefox.path", "/usr/bin/firefox"));
-      FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
-      firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
+	  System.setProperty("firefox.gecko.driver", "geckodriver");
+// 	  String Xport = System.getProperty(
+//               "lmportal.xvfb.id", ":10");
+//       final File firefoxPath = new File(System.getProperty(
+//               "lmportal.deploy.firefox.path", "/usr/bin/firefox"));
+//       FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
+//       firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
 
       // Start Firefox driver
-      WebDriver driver = new FirefoxDriver(firefoxBinary, null);
+      //WebDriver driver = new FirefoxDriver(firefoxBinary, null);
+	WebDriver driver = new FirefoxDriver();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       driver.get("http://google.com/");
       System.out.println("Page title is: " + driver.getTitle());
