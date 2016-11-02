@@ -95,7 +95,7 @@ public class xvfb2 {
 				List<WebElement> allsizes = driver.findElements(By.cssSelector("span[class='swatch']"));
 				//Random random3 = new Random();
 				//WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
-				WebElement randomSize = allsizes.get(1);
+				WebElement randomSize = allsizes.get(0);
 				if(!allsizes.isEmpty())//if the size is availabe,click/select it
 				{
 					randomSize.click();
