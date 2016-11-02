@@ -177,6 +177,7 @@ public class xvfb2 {
 					addCart.click();
 
 					System.out.println("Add to Cart button is clicked");
+					System.out.println("Page title is: " + driver.getTitle());
 					//CHECKOUT
 
 					//checks if checkout button is enabled + displayed on webpage
@@ -199,76 +200,76 @@ public class xvfb2 {
 					{
 						CheckOut.click();
 						System.out.println("CheckOut button is clicked");
-						driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-						//FILL IN THE BILLING INFORMATION
-						WebDriverWait waitt = new WebDriverWait(driver, 100);
-						waitt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:firstname']"))).sendKeys("test");
+// 						driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+// 						//FILL IN THE BILLING INFORMATION
+// 						WebDriverWait waitt = new WebDriverWait(driver, 100);
+// 						waitt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:firstname']"))).sendKeys("test");
 
-						//driver.findElement(By.xpath("//*[@id='billing:firstname']")).sendKeys("test");
-						System.out.println("First Name is enterd");
-						//WebDriverWait waitt2 = new WebDriverWait(driver, 10);
-						//waitt2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:lastname']"))).sendKeys("test");
+// 						//driver.findElement(By.xpath("//*[@id='billing:firstname']")).sendKeys("test");
+// 						System.out.println("First Name is enterd");
+// 						//WebDriverWait waitt2 = new WebDriverWait(driver, 10);
+// 						//waitt2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:lastname']"))).sendKeys("test");
 
-						driver.findElement(By.xpath("//*[@id='billing:lastname']")).sendKeys("test");
-						System.out.println("Last Name is Enterd");
-						//WebDriverWait waitt3 = new WebDriverWait(driver, 10);
-						//waitt3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='bill_form']/div[2]/div[1]/input"))).sendKeys("sara.iftikharsi@gmail.com");
+// 						driver.findElement(By.xpath("//*[@id='billing:lastname']")).sendKeys("test");
+// 						System.out.println("Last Name is Enterd");
+// 						//WebDriverWait waitt3 = new WebDriverWait(driver, 10);
+// 						//waitt3.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='bill_form']/div[2]/div[1]/input"))).sendKeys("sara.iftikharsi@gmail.com");
 
-						driver.findElement(By.xpath("//*[@id='bill_form']/div[2]/div[1]/input")).sendKeys("sara.iftikharsi@gmail.com");
-						System.out.println("Email is Enterd");
-						//WebDriverWait waitt4 = new WebDriverWait(driver, 10);
-						//waitt4.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:confirm_email']"))).sendKeys("sara.iftikharsi@gmail.com");
+// 						driver.findElement(By.xpath("//*[@id='bill_form']/div[2]/div[1]/input")).sendKeys("sara.iftikharsi@gmail.com");
+// 						System.out.println("Email is Enterd");
+// 						//WebDriverWait waitt4 = new WebDriverWait(driver, 10);
+// 						//waitt4.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:confirm_email']"))).sendKeys("sara.iftikharsi@gmail.com");
 
-						driver.findElement(By.xpath("//*[@id='billing:confirm_email']")).sendKeys("sara.iftikharsi@gmail.com");
-						System.out.println("Email is Confirmed");
-						//WebDriverWait waitt5 = new WebDriverWait(driver, 10);
-						//waitt5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:street1']"))).sendKeys("test");
+// 						driver.findElement(By.xpath("//*[@id='billing:confirm_email']")).sendKeys("sara.iftikharsi@gmail.com");
+// 						System.out.println("Email is Confirmed");
+// 						//WebDriverWait waitt5 = new WebDriverWait(driver, 10);
+// 						//waitt5.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:street1']"))).sendKeys("test");
 
-						driver.findElement(By.xpath("//*[@id='billing:street1']")).sendKeys("test");
-						System.out.println("Street is Enterd");
-						//WebDriverWait waitt6 = new WebDriverWait(driver, 10);
-						//waitt6.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:region']"))).sendKeys("test");
+// 						driver.findElement(By.xpath("//*[@id='billing:street1']")).sendKeys("test");
+// 						System.out.println("Street is Enterd");
+// 						//WebDriverWait waitt6 = new WebDriverWait(driver, 10);
+// 						//waitt6.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:region']"))).sendKeys("test");
 
-						driver.findElement(By.xpath("//*[@id='billing:region']")).sendKeys("test");
-						System.out.println("Region is Enterd");
-						//WebDriverWait waitt7 = new WebDriverWait(driver, 10);
-						//waitt7.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:postcode']"))).sendKeys("test");
+// 						driver.findElement(By.xpath("//*[@id='billing:region']")).sendKeys("test");
+// 						System.out.println("Region is Enterd");
+// 						//WebDriverWait waitt7 = new WebDriverWait(driver, 10);
+// 						//waitt7.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:postcode']"))).sendKeys("test");
 
-						driver.findElement(By.xpath("//*[@id='billing:postcode']")).sendKeys("test");
-						System.out.println("Post code is Enterd");
-						//Select oSelect2 = new Select(driver.findElement(By.xpath("//*[@id='billing:country_id']")));
-						//oSelect2.selectByVisibleText("PAKISTAN");
+// 						driver.findElement(By.xpath("//*[@id='billing:postcode']")).sendKeys("test");
+// 						System.out.println("Post code is Enterd");
+// 						//Select oSelect2 = new Select(driver.findElement(By.xpath("//*[@id='billing:country_id']")));
+// 						//oSelect2.selectByVisibleText("PAKISTAN");
 
-						Select oSelect3 = new Select(driver.findElement(By.xpath("//*[@id='billing:city']")));
-						oSelect3.selectByIndex(3);
-						System.out.println("City is Enterd");
-						//WebDriverWait waitt8 = new WebDriverWait(driver, 10);
-						//waitt8.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:telephone']"))).sendKeys("03364054186");
+// 						Select oSelect3 = new Select(driver.findElement(By.xpath("//*[@id='billing:city']")));
+// 						oSelect3.selectByIndex(3);
+// 						System.out.println("City is Enterd");
+// 						//WebDriverWait waitt8 = new WebDriverWait(driver, 10);
+// 						//waitt8.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='billing:telephone']"))).sendKeys("03364054186");
 
-						driver.findElement(By.xpath("//*[@id='billing:telephone']")).sendKeys("03364054186");
-						System.out.println("Telephone number is Enterd");
-						//WebDriverWait waitt9 = new WebDriverWait(driver, 10);
-						//waitt9.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='tel2']"))).sendKeys("03364054186");
+// 						driver.findElement(By.xpath("//*[@id='billing:telephone']")).sendKeys("03364054186");
+// 						System.out.println("Telephone number is Enterd");
+// 						//WebDriverWait waitt9 = new WebDriverWait(driver, 10);
+// 						//waitt9.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='tel2']"))).sendKeys("03364054186");
 
-						driver.findElement(By.xpath("//*[@id='tel2']")).sendKeys("03364054186");
-						System.out.println("Telephone number is confirmed");
+// 						driver.findElement(By.xpath("//*[@id='tel2']")).sendKeys("03364054186");
+// 						System.out.println("Telephone number is confirmed");
 
-						//File scrFile2 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-						//FileUtils.copyFile(scrFile2, new File("beechtree2.png"), true);
+// 						//File scrFile2 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+// 						//FileUtils.copyFile(scrFile2, new File("beechtree2.png"), true);
 
-						//SELECT CASH ON DELEIVERY
-						//WebDriverWait waitt10 = new WebDriverWait(driver, 10);
-						//waitt10.until(ExpectedConditions.visibilityOfElementLocated(By.id("p_method_cashondelivery"))).click();
+// 						//SELECT CASH ON DELEIVERY
+// 						//WebDriverWait waitt10 = new WebDriverWait(driver, 10);
+// 						//waitt10.until(ExpectedConditions.visibilityOfElementLocated(By.id("p_method_cashondelivery"))).click();
 
-						driver.findElement(By.id("p_method_cashondelivery")).click();
+// 						driver.findElement(By.id("p_method_cashondelivery")).click();
 
-						System.out.println("Method cash delivery is clicked");
+// 						System.out.println("Method cash delivery is clicked");
 
-						//PLACE ORDER
-						WebDriverWait wait3 = new WebDriverWait(driver, 200);
-						wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='review-buttons-container']/button")));
-						driver.findElement(By.xpath("//*[@id='review-buttons-container']/button")).click();
-						System.out.println("Review Button is clicked");
+// 						//PLACE ORDER
+// 						WebDriverWait wait3 = new WebDriverWait(driver, 200);
+// 						wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='review-buttons-container']/button")));
+// 						driver.findElement(By.xpath("//*[@id='review-buttons-container']/button")).click();
+// 						System.out.println("Review Button is clicked");
 					}
 				}
 			}
