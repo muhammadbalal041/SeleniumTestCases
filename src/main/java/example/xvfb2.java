@@ -33,6 +33,8 @@ public class xvfb2 {
   @Test
   public void f() {
 	  //WebDriver driver;
+	  private WebDriver driver;
+	boolean outOfStock = false;
 	  System.setProperty("webdriver.gecko.driver", "geckodriver");
 	  String Xport = System.getProperty(
               "lmportal.xvfb.id", ":10");
@@ -42,7 +44,7 @@ public class xvfb2 {
       firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
 
       // Start Firefox driver
-      WebDriver driver = new FirefoxDriver(firefoxBinary, null);
+       driver = new FirefoxDriver(firefoxBinary, null);
 // 	 driver = new FirefoxDriver();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
       //driver.get("http://google.com/");
