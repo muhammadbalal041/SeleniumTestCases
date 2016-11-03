@@ -58,11 +58,11 @@ public class xvfb2 {
 
 		System.out.println("Page title is: " + driver.getTitle());
 
-		//driver.findElement(By.cssSelector("div.close")).click();
+		driver.findElement(By.cssSelector("div.close")).click();
 
 		//WebDriverWait waitSpan = new WebDriverWait(driver, 100);
-		//waitSpan.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='bg-popup']/span")));
-		//driver.findElement(By.xpath(".//*[@id='bg-popup']/span")).click();
+		waitSpan.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='bg-popup']/span")));
+		driver.findElement(By.xpath(".//*[@id='bg-popup']/span")).click();
 
 		List<WebElement> allCategories = driver.findElements(By.cssSelector("div.landing-content"));
 		//driver.findElement(By.cssSelector("category-landing")).click();
@@ -71,7 +71,7 @@ public class xvfb2 {
 		randomCategory.click();
 		System.out.println("print the selected Category "+ randomCategory);
 
-		WebElement p=driver.findElement(By.xpath("//*[@id='product-collection-image-12599']"));
+		WebElement p=driver.findElement(By.xpath("//*[@id='product-collection-image-11203']"));
 		String temp = p.getText(); 
 		System.out.println("p.getText "+ temp);
 		System.out.println("print the selected product "+ p);
