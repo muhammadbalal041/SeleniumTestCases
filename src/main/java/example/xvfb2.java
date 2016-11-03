@@ -60,7 +60,7 @@ public class xvfb2 {
 
 		driver.findElement(By.cssSelector("div.close")).click();
 
-		//WebDriverWait waitSpan = new WebDriverWait(driver, 100);
+		WebDriverWait waitSpan = new WebDriverWait(driver, 100);
 		waitSpan.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='bg-popup']/span")));
 		driver.findElement(By.xpath(".//*[@id='bg-popup']/span")).click();
 
