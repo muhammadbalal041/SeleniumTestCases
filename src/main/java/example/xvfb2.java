@@ -58,7 +58,7 @@ public class xvfb2 {
 
 		System.out.println("Page title is: " + driver.getTitle());
 
-		driver.findElement(By.cssSelector("div.close")).click();
+		//driver.findElement(By.cssSelector("div.close")).click();
 
 		WebDriverWait waitSpan = new WebDriverWait(driver, 100);
 		waitSpan.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='bg-popup']/span")));
