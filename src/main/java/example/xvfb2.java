@@ -123,22 +123,28 @@ public class xvfb2 {
 				//*[@id="swatch14"]
 				//*[@id="swatch11"]
 				WebDriverWait waittt = new WebDriverWait(driver, 100);
-				waittt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='swatch28']")));
+				waittt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("span[class='swatch']")));
 
-				driver.findElement(By.xpath("//*[@id='swatch28']")).click();
-				System.out.println("swatch size is clicked");
+// 				driver.findElement(By.xpath("//*[@id='swatch28']")).click();
+				
+				List<WebElement> allsizes = driver.findElements(By.cssSelector("span[class='swatch']"));
+				Random random3 = new Random();
+				WebElement randomSize = allsizes.get(random3.nextInt(allsizes.size()));
+				System.out.println("all sizes is "+ allsizes);
+				
+				//System.out.println("swatch size is clicked");
 				
 				
-// 				if(!allsizes.isEmpty())//if the size is availabe,click/select it
-// 				{
-// 					randomSize.click();
-// 					System.out.println("swatch size is clicked");
-// 				}
-// 				else//if the sizes are not available, print on console that the product is out of stock
-// 				{
-// 					System.out.println("the item selected is out of stock");
-// 					outOfStock = true;
-// 				}
+				if(!allsizes.isEmpty())//if the size is availabe,click/select it
+				{
+					randomSize.click();
+					System.out.println("swatch size is clicked");
+				}
+				else//if the sizes are not available, print on console that the product is out of stock
+				{
+					System.out.println("the item selected is out of stock");
+					outOfStock = true;
+				}
 			}
 			if(outOfStock == false)//continue testing only if product is in stock
 			{
