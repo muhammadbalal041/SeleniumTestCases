@@ -123,7 +123,7 @@ public class xvfb2 {
 				//*[@id="swatch14"]
 				//*[@id="swatch11"]
 				WebDriverWait waittt = new WebDriverWait(driver, 100);
-				waittt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("span[class='swatch']")));
+				waittt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='showChart']/span")));
 
 // 				driver.findElement(By.xpath("//*[@id='swatch28']")).click();
 				
