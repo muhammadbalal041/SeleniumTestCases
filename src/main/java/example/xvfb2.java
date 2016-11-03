@@ -61,8 +61,8 @@ public class xvfb2 {
 		//driver.findElement(By.cssSelector("div.close")).click();
 
 		WebDriverWait wait = new WebDriverWait(driver, 100);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.close")));
-		driver.findElement(By.cssSelector("span.close")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("//*[@id='bg-popup']/span")));
+		driver.findElement(By.cssSelector("//*[@id='bg-popup']/span")).click();
 
 		List<WebElement> allCategories = driver.findElements(By.cssSelector("div.landing-content"));
 		//driver.findElement(By.cssSelector("category-landing")).click();
