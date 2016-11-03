@@ -1,27 +1,27 @@
 package example;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+
 import java.io.File;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-//import org.testng.annotations.BeforeClass;
-//import org.testng.annotations.BeforeTest;
-
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.phantomjs.PhantomJSDriver;
-//import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -57,14 +57,25 @@ public class xvfb2 {
 		//driver.get("http://www.beechtree.pk");
 
 		System.out.println("Page title is: " + driver.getTitle());
+	  
+	  	String base = driver.getWindowHandle();
+
+	    Set <String> set = driver.getWindowHandles();
+
+	    set.remove(base);
+	    assert set.size()==1;
+
+	    driver.switchTo().window(set.toArray(new String[0]));
+
+	    driver.close();
+	    driver.switchTo().window(base);
 
 		//driver.findElement(By.cssSelector("div.close")).click();
 
 		//WebDriverWait waitSpan = new WebDriverWait(driver, 100);
 		//waitSpan.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='bg-popup']/span")));
 		//driver.findElement(By.xpath(".//*[@id='bg-popup']/span")).click();
-	  	WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bg-popup"))).click();
+	  	
 		System.out.println("Successfully closed the start Popup");
 
 
