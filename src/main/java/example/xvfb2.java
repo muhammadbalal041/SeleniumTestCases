@@ -19,7 +19,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -33,7 +33,7 @@ public class xvfb2 {
   @Test
   public void f() {
 	  //WebDriver driver;
-	 WebDriver driver;
+	WebDriver driver;
 	boolean outOfStock = false;
 	  System.setProperty("webdriver.gecko.driver", "geckodriver");
 	  String Xport = System.getProperty(
@@ -46,7 +46,7 @@ public class xvfb2 {
       // Start Firefox driver
        driver = new FirefoxDriver(firefoxBinary, null);
 // 	 driver = new FirefoxDriver();
-	driver.manage().window().maximize();
+	//driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	 
 	  Logger logger = Logger.getLogger("");
@@ -57,18 +57,6 @@ public class xvfb2 {
 		//driver.get("http://www.beechtree.pk");
 
 		System.out.println("Page title is: " + driver.getTitle());
-	  
-	  	String base = driver.getWindowHandle();
-
-	    Set <String> set = driver.getWindowHandles();
-
-	    set.remove(base);
-	    assert set.size()==1;
-
-	    driver.switchTo().window(set.toArray(new String[0]));
-
-	    driver.close();
-	    driver.switchTo().window(base);
 
 		//driver.findElement(By.cssSelector("div.close")).click();
 
