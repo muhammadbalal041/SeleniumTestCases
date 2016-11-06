@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="example.xvfb2"/>
+      <class name="example.PlaceAnOrder"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
