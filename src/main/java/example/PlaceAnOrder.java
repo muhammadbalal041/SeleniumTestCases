@@ -232,7 +232,7 @@ public class PlaceAnOrder {
 						//WebDriverWait waitt9 = new WebDriverWait(driver, 10);
 						//waitt9.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='tel2']"))).sendKeys("03364054186");
 
-						driver.findElement(By.xpath("//*[@id='tel2']")).sendKeys("03364054186");
+						driver.findElement(By.xpath("html/body/div[1]/div/div[4]/div/div/div/div[4]/form/div/div[1]/div[2]/div[2]/div/div[8]/div[1]/input")).sendKeys("03364054186");
 						System.out.println("Telephone number is confirmed");
 
 						//File scrFile2 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
