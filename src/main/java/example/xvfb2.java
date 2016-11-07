@@ -28,21 +28,17 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 
 public class xvfb2 {
-	
-  @Test
-  public void f() {
-	  //WebDriver driver;
 	WebDriver driver;
 	boolean outOfStock = false;
-	  System.setProperty("webdriver.gecko.driver", "geckodriver");
-	  String Xport = System.getProperty("lmportal.xvfb.id", ":1");
-      final File firefoxPath = new File(System.getProperty("lmportal.deploy.firefox.path", "/usr/bin/firefox"));
-      FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
-      firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
-
-      // Start Firefox driver
-       driver = new FirefoxDriver(firefoxBinary, null);
-// 	 driver = new FirefoxDriver();
+  @Test
+  public void f() {
+	String Xport = System.getProperty("lmportal.xvfb.id", ":1");
+		System.setProperty("firefox.gecko.driver", "geckodriver");
+		// /usr/bin/firefox
+		final File firefoxPath = new File(System.getProperty("lmportal.deploy.firefox.path", "/usr/bin/firefox"));
+		FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
+		firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
+		driver = new FirefoxDriver(firefoxBinary, null);
 	//driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	 
