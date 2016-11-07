@@ -3,7 +3,6 @@ package example;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-
 import java.io.File;
 import java.util.List;
 import java.util.Random;
@@ -11,7 +10,6 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,16 +28,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 
 public class xvfb2 {
+	
   @Test
   public void f() {
 	  //WebDriver driver;
 	WebDriver driver;
 	boolean outOfStock = false;
 	  System.setProperty("webdriver.gecko.driver", "geckodriver");
-	  String Xport = System.getProperty(
-              "lmportal.xvfb.id", ":10");
-      final File firefoxPath = new File(System.getProperty(
-              "lmportal.deploy.firefox.path", "/usr/bin/firefox"));
+	  String Xport = System.getProperty("lmportal.xvfb.id", ":1");
+      final File firefoxPath = new File(System.getProperty("lmportal.deploy.firefox.path", "/usr/bin/firefox"));
       FirefoxBinary firefoxBinary = new FirefoxBinary(firefoxPath);
       firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
 
