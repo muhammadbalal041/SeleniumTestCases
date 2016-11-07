@@ -53,7 +53,7 @@ public class xvfb2 {
 		logger.setLevel(Level.OFF);
 
 		//OPEN BEACHTREE WEBSITE
-		driver.get("http://www.beechtree.pk");
+		driver.get("http://www.leisureclub.pk/");
 		//driver.get("http://www.beechtree.pk");
 
 		System.out.println("Page title is: " + driver.getTitle());
